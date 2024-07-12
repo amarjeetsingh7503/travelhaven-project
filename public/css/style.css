@@ -1,0 +1,310 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/*Navbar*/
+.navbar {
+    height: 6rem;
+    background-color: #fbfaf7;
+    padding-left: 2rem;
+}
+
+.fa-magnifying-glass-location {
+    color: #fc3741;
+    font-size: 2.5rem;
+}
+
+.brandname {
+    color: #222222 !important;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-weight: 600 !important;
+}
+
+.navbar-collapse {
+    background-color: #f8f9fa;
+    width: 16rem;
+    padding-left: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/*Footer*/
+footer {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #EEEDEB;
+}
+
+.f-info {
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin: 0 0.5rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials, .f-info-links , .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/*Card*/
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem !important;
+    width: 19rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.show-listing-card {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-body {
+    padding: 0.5rem !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/*Show*/
+.show-card-img {
+    height: 50vh;
+}
+
+/*Map*/
+#map {
+    width: 100%;
+    height: 60vh;
+}
+
+/* Index Filters */
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    position: -webkit-sticky; /*For Safari Browser*/
+    position: sticky;
+    top: 6rem;
+    z-index: 1;
+}
+
+.filter-options {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+    padding-bottom: 0.3rem;
+    /* margin-top: 0.5rem; */
+    opacity: 0.9;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.filter-options a {
+    color: #000;
+    text-decoration: none;
+}
+
+.filter-options:hover {
+    opacity: 1;
+    background-color: rgba(138, 137, 137, 0.26);
+    border-radius: 20% 20% 0 0;
+    border-bottom: 3px solid #000;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 1rem;
+}
+
+.dropdown-menu {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.filter-options-dropdown {
+    padding-left: 1rem;
+    opacity: 0.7;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #000;
+}
+
+.filter-options-dropdown:hover {
+    opacity: 1;
+}
+
+.tax-info {
+    font-size: 0.8rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.tax-value {
+    display: none;
+}
+
+.index-search-form {
+    display: none;
+}
+
+.search-form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .listing-card {
+        width: 95%;
+        max-width: 30rem;
+        margin: 0 auto;
+      }
+
+    /* Filters Dropdown */
+    .dropdown {
+        display: inline;
+    }
+
+    .filter-options {
+        display: none;
+    }
+
+    .tax-info {
+        margin-left: auto;
+        margin-right: 0;
+        border: none;
+    }
+
+    #filters {
+        top: 5rem;
+    } 
+
+    .navbar-search-form {
+        display: none !important;
+    }
+
+    .index-search-form {
+        display: inline;
+    }
+  }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8rem !important;
+    }
+    /*Index Cards*/
+    .listing-card {
+      width: 80%;
+      max-width: 25rem;
+      margin: 0 auto;
+    }
+
+    .navbar-search-form {
+        display: none !important;
+    }
+
+    .search-form {
+        display: inline;
+    }
+
+    .flash-alert {
+        font-size: 0.7rem !important;
+    }
+  }
+
+@media (max-width: 456px) {
+     /*NavBar*/
+     .fa-magnifying-glass-location {
+        font-size: 2.5rem !important;
+    }
+    
+    .brandname {
+        font-size: 1.2rem !important;
+        font-weight: 800 !important;
+    }
+
+    .card-img-top {
+        height: 40vh;
+    }
+
+    #map {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 324px) {
+    /*NavBar*/
+    .fa-magnifying-glass-location {
+       font-size: 1.7rem !important;
+       display: none;
+   }
+   
+   .brandname {
+       font-size: 1rem !important;
+       font-weight: 800 !important;
+   }
+}

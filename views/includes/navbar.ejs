@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listings"
+      ><i class="fa-solid fa-magnifying-glass-location"></i
+      ><span><a href="/listings" class="brandname">TravelHaven</a></span></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto mt-3 navbar-search-form">
+        <form class="d-flex" role="search" method="get" action="/listings">
+          <input
+            class="form-control me-2 border border-secondary rounded-pill focus-ring focus-ring-danger py-1 px-1 ps-2 pe-5"
+            type="text"
+            name="search"
+            placeholder="Search by country"
+            aria-label="Search"
+            list="suggestions"
+          />
+          <datalist id="suggestions">
+            <option value="India"></option>
+            <option value="United States"></option>
+            <option value="United Kingdom"></option>
+            <option value="Fiji"></option>
+          </datalist>
+
+          <button class="btn btn-danger rounded-circle" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto mt-3">
+        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/listings/new">Add Your Listing</a>
+
+        <% if (!currentUser) { %>
+        <div>
+          <a href="/signup" class="btn btn-sm btn-danger mt-1">SignUp</a>
+          <a href="/login" class="btn btn-sm btn-outline-secondary ms-2 mt-1"
+            >Login</a
+          >
+        </div>
+        <% } %> <% if (currentUser) { %>
+        <a href="/logout" class="btn btn-sm btn-outline-secondary ms-2 mt-1"
+          >Logout</a
+        >
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

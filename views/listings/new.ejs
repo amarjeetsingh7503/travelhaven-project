@@ -1,0 +1,94 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="new-listing-form">
+  <h2 class="mt-4 mb-4">Create New Listing</h2>
+  <hr />
+  <form
+    method="post"
+    action="/listings"
+    class="needs-validation"
+    novalidate
+    enctype="multipart/form-data"
+  >
+    <div>
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        name="listing[title]"
+        placeholder="Add title"
+        class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please choose a title.</div>
+    </div>
+    <br />
+    <div>
+      <label for="description" class="form-label">Deacription</label>
+      <textarea
+        type="text"
+        name="listing[description]"
+        placeholder="Add description"
+        class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+        rows="5"
+        required
+      ></textarea>
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please choose a description.</div>
+    </div>
+    <br />
+    <div>
+      <label for="image" class="form-label">Upload Image</label>
+      <input
+        type="file"
+        name="listing[image]"
+        class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+        required
+      />
+    </div>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please choose a image.</div>
+    <br />
+    <div>
+      <label for="price" class="form-label">Price</label>
+      <input
+        type="number"
+        name="listing[price]"
+        placeholder="Add price"
+        class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please choose a valid price.</div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-md-6">
+        <label for="country" class="form-label">Country</label>
+        <input
+          type="text"
+          name="listing[country]"
+          placeholder="Add country"
+          class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please choose a country.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="location" class="form-label">Location</label>
+        <input
+          type="text"
+          name="listing[location]"
+          placeholder="Add location"
+          class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please choose a location.</div>
+      </div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-danger btn-md">Add</button>
+  </form>
+</div>
