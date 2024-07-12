@@ -78,7 +78,7 @@ async function main() {
 
 //Root Route
 app.get("/", (req, res) => {
-  res.send("Root Working");
+  res.redirect("/listings");
 });
 
 app.use((req, res, next) => {
