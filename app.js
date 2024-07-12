@@ -27,6 +27,9 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 
+const port = 8080;
+const dbUrl = process.env.ATLAS_DB_URL;
+
 const mongoStore = MongoStore.create({
   mongoUrl: dbUrl,
   crypto: {
@@ -60,9 +63,6 @@ passport.use(new LocalStrategy(User.authenticate()));
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
-const port = 8080;
-const dbUrl = process.env.ATLAS_DB_URL;
 
 main()
   .then((res) => {
