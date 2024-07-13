@@ -273,7 +273,7 @@
         <p class="card-text">
           <b> <%= listing.title %> </b><br />
           &#8377;<%= listing.price.toLocaleString("en-IN") %>/night &nbsp;&nbsp;
-          <i class="tax-value">+18% GST</i>
+          <i class="tax-value">Tax: &#8377;<%= (listing.price*0.18) %></i>
         </p>
       </div>
     </div>
