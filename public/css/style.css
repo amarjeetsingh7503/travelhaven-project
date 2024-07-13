@@ -11,9 +11,10 @@ body {
 
 /*Navbar*/
 .navbar {
-    /* height: 6rem; */
     background-color: #fbfaf7;
-    padding-left: 2rem;
+    padding-top: 1rem !important;
+    padding-left: 2rem !important;
+    padding-bottom: 1.45rem !important;
   }
   
   .fa-magnifying-glass-location {
