@@ -23,6 +23,8 @@ router.route("/privacy").get(listingController.privacyPolicy);
 
 router.route("/terms").get(listingController.termsConditions);
 
+router.route("/details").get(listingController.companyDetails);
+
 router
   .route("/:id")
   .get(wrapAsync(listingController.showListing))

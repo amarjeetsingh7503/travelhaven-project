@@ -93,3 +93,7 @@ module.exports.privacyPolicy = (req, res) => {
 module.exports.termsConditions = (req, res) => {
   res.render("policies/terms.ejs");
 };
+
+module.exports.companyDetails = (req, res) => {
+  res.render("policies/details.ejs");
+};
