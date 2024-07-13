@@ -19,6 +19,10 @@ router
 
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
+router.route("/privacy").get(listingController.privacyPolicy);
+
+router.route("/terms").get(listingController.termsConditions);
+
 router
   .route("/:id")
   .get(wrapAsync(listingController.showListing))

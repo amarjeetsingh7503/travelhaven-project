@@ -85,3 +85,11 @@ module.exports.deleteListing = async (req, res) => {
   req.flash("success", "Listing Deleted!");
   res.redirect("/listings");
 };
+
+module.exports.privacyPolicy = (req, res) => {
+  res.render("policies/privacy.ejs");
+};
+
+module.exports.termsConditions = (req, res) => {
+  res.render("policies/terms.ejs");
+};

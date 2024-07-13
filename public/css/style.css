@@ -11,34 +11,48 @@ body {
 
 /*Navbar*/
 .navbar {
-    height: 6rem;
+    /* height: 6rem; */
     background-color: #fbfaf7;
     padding-left: 2rem;
-}
-
-.fa-magnifying-glass-location {
+  }
+  
+  .fa-magnifying-glass-location {
     color: #fc3741;
     font-size: 2.5rem;
-}
-
-.brandname {
+  }
+  
+  .brandname {
     color: #222222 !important;
     font-size: 1.2rem !important;
     font-weight: 800 !important;
     text-decoration: none;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     color: #222222 !important;
     font-weight: 600 !important;
-}
-
-.navbar-collapse {
+  }
+  
+  .navbar-collapse {
     background-color: #f8f9fa;
     width: 16rem;
     padding-left: 1rem !important;
-    padding-bottom: 1rem !important;
-}
+  }
+  
+  /* Ensure consistent padding/margin in the navbar-toggler */
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
 /*Footer*/
 footer {
@@ -203,7 +217,7 @@ footer {
     margin-top: 1.5rem;
 }
 
-.new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert {
+.new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy {
     width: 60%;
     margin: 0 auto;
 }
@@ -265,6 +279,19 @@ footer {
     .flash-alert {
         font-size: 0.7rem !important;
     }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1rem;
+      }
+      .navbar-search-form {
+        width: 100%;
+      }
+      .navbar-search-form form {
+        width: 100%;
+      }
   }
 
 @media (max-width: 456px) {
@@ -287,7 +314,7 @@ footer {
         height: 40vh;
     }
 
-    .new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert {
+    .new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy {
         width: 90%;
     }
 
