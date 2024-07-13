@@ -252,7 +252,9 @@
           <b> <%= listing.title %> </b><br />
           &#8377;<%= listing.price.toLocaleString("en-IN") %><%=
           listing.priceCategory %>
-          <i class="tax-value">Tax: &#8377;<%= (listing.price*0.18) %></i>
+          <i class="tax-value"
+            >Tax: &#8377;<%= (listing.price*0.18).toFixed(2) %></i
+          >
         </p>
       </div>
     </div>
