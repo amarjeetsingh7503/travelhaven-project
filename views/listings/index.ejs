@@ -213,8 +213,8 @@
   </div>
   <div class="filter-options">
     <div>
-      <i class="fa-solid fa-fish"></i>
-      <p>Fishing</p>
+      <i class="fa-solid fa-gamepad"></i>
+      <p>Gaming</p>
     </div>
   </div>
   <div class="filter-options">
@@ -250,7 +250,8 @@
       <div class="card-body">
         <p class="card-text">
           <b> <%= listing.title %> </b><br />
-          &#8377;<%= listing.price.toLocaleString("en-IN") %>/night &nbsp;&nbsp;
+          &#8377;<%= listing.price.toLocaleString("en-IN") %><%=
+          listing.priceCategory %>
           <i class="tax-value">Tax: &#8377;<%= (listing.price*0.18) %></i>
         </p>
       </div>

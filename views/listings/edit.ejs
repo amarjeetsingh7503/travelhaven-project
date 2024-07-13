@@ -59,18 +59,32 @@
       <div class="invalid-feedback">Please choose a image.</div>
     </div>
     <br />
-    <div>
-      <label for="price" class="form-label">Price</label>
-      <input
-        type="number"
-        name="listing[price]"
-        placeholder="Add price"
-        class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
-        value="<%= listing.price %>"
-        required
-      />
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter a valid price.</div>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="price" class="form-label">Price</label>
+        <input
+          type="number"
+          name="listing[price]"
+          placeholder="Add price"
+          class="form-control focus-ring focus-ring-danger py-1 px-1 ps-2"
+          value="<%= listing.price %>"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please enter a valid price.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="priceCategory" class="form-label">Price Category</label>
+        <select
+          class="form-select form-select focus-ring focus-ring-danger py-1 px-1 ps-2"
+          aria-label="Default select example"
+          name="listing[priceCategory]"
+        >
+          <option value="/night">per night</option>
+          <option value="/person">per person</option>
+          <option value="/hour">per hour</option>
+        </select>
+      </div>
     </div>
     <br />
     <div class="row">

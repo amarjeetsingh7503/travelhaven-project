@@ -17,6 +17,7 @@ const listingSchema = new Schema({
     filename: String,
   },
   price: Number,
+  priceCategory: String,
   location: String,
   country: String,
   reviews: [

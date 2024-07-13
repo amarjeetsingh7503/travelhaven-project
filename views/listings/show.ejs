@@ -15,7 +15,8 @@
     <p class="card-text">Owned by: @<i><%= listing.owner.username %></i></p>
     <p class="card-text"><%= listing.description %></p>
     <p class="card-text">
-      <b>Price: </b>&#8377;<%= listing.price.toLocaleString("en-IN") %>/night
+      <b>Price: </b>&#8377;<%= listing.price.toLocaleString("en-IN") %><%=
+      listing.priceCategory %>
       <br />
       <b>Location: </b> <%= listing.location %> <br />
       <b>Country: </b> <%= listing.country %>

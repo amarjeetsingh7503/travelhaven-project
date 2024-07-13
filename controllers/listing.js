@@ -60,7 +60,7 @@ module.exports.renderEditForm = async (req, res) => {
   }
   let originalImgUrl = listing.image.url;
   originalImgUrl = originalImgUrl.replace("/upload", "/upload/h_15");
-  console.log(originalImgUrl);
+  // console.log(originalImgUrl);
   res.render("listings/edit.ejs", { listing, originalImgUrl });
 };
 
