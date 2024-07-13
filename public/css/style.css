@@ -290,6 +290,11 @@ footer {
       .navbar-search-form form {
         width: 100%;
       }
+
+      .filter-options-dropdown {
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
   }
 
 @media (max-width: 456px) {
@@ -318,6 +323,10 @@ footer {
 
     footer {
         font-size: 0.7rem;
+    }
+    
+    .form-priceCategory, .form-location {
+        margin-top: 1rem;
     }
 }
 
