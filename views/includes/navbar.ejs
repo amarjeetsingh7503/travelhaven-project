@@ -42,7 +42,13 @@
       <div class="navbar-nav ms-auto mt-3">
         <a class="nav-link" href="/listings">Explore</a>
         <a class="nav-link" href="/listings/new">Add Your Listing</a>
-
+        <div class="nav-link-dropdown">
+          <% if (currentUser) { %>
+          <a class="nav-link" href="/">See Your Listings</a>
+          <a class="nav-link" href="/">Edit Profile</a>
+          <a class="nav-link" href="/logout">Logout</a>
+          <% } %>
+        </div>
         <% if (!currentUser) { %>
         <div>
           <a href="/signup" class="btn btn-sm btn-danger mt-1 nav-btn"
@@ -55,10 +61,14 @@
           >
         </div>
         <% } %> <% if (currentUser) { %>
-        <a href="/logout" class="btn btn-sm btn-outline-secondary ms-2 mt-1"
-          >Logout</a
-        >
-        <% } %>
+        <div class="user-dropdown">
+          <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+          <div class="user-dropdown-content">
+            <a href="#option1">View Your Listings</a>
+            <a href="#option2">Edit Profile</a>
+            <a href="/logout">Logout</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
