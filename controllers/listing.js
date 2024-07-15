@@ -86,6 +86,16 @@ module.exports.deleteListing = async (req, res) => {
   res.redirect("/listings");
 };
 
+module.exports.yourListings = async (req, res) => {
+  let listings = await Listing.find({ owner: req.user.id });
+  res.render("listings/yourListings.ejs", { listings });
+};
+
+module.exports.userProfile = async (req, res) => {
+  let userInfo = await User.findOne({ _id: req.user._id });
+  res.render("user/userProfile.ejs", { userInfo });
+};
+
 module.exports.privacyPolicy = (req, res) => {
   res.render("policies/privacy.ejs");
 };

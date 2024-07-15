@@ -44,8 +44,10 @@
         <a class="nav-link" href="/listings/new">Add Your Listing</a>
         <div class="nav-link-dropdown">
           <% if (currentUser) { %>
-          <a class="nav-link" href="/">See Your Listings</a>
-          <a class="nav-link" href="/">Edit Profile</a>
+          <a class="nav-link" href="/listings/yourlistings"
+            >See Your Listings</a
+          >
+          <a class="nav-link" href="/listings/myprofile">Edit Profile</a>
           <a class="nav-link" href="/logout">Logout</a>
           <% } %>
         </div>
@@ -65,8 +67,8 @@
         <div class="user-dropdown">
           <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
           <div class="user-dropdown-content">
-            <a href="#option1">View Your Listings</a>
-            <a href="#option2">Edit Profile</a>
+            <a href="/listings/yourlistings">View Your Listings</a>
+            <a href="/listings/myprofile">Edit Profile</a>
             <a href="/logout">Logout</a>
           </div>
         </div>

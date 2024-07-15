@@ -215,7 +215,7 @@ footer {
     margin-top: 1.5rem;
 }
 
-.new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy {
+.new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy, .user-profile {
     width: 60%;
     margin: 0 auto;
 }
@@ -246,9 +246,9 @@ footer {
 .user-dropdown-content {
     display: none;
     position: absolute;
-    right: 0.8rem;
+    right: 0rem;
     background-color: #f9f9f9;
-    min-width: 170px;
+    min-width: 12rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -372,7 +372,7 @@ footer {
         height: 40vh;
     }
 
-    .new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy {
+    .new-listing-form, .edit-listing-form, .login-form, .signup-form, .flash-alert, .privacy-policy, .user-profile {
         width: 90%;
     }
 

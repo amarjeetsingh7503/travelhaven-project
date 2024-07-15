@@ -19,6 +19,16 @@ router
 
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
+router.get(
+  "/yourlistings",
+  isLoggedIn,
+  wrapAsync(listingController.yourListings)
+);
+
+router
+  .route("/myprofile")
+  .get(isLoggedIn, wrapAsync(listingController.userProfile));
+
 router.route("/privacy").get(listingController.privacyPolicy);
 
 router.route("/terms").get(listingController.termsConditions);
