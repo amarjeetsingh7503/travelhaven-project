@@ -1,4 +1,5 @@
 const Listing = require("../models/listing.js");
+const User = require("../models/user.js");
 const { forwardGeocoding } = require("../middleware.js");
 
 module.exports.index = async (req, res) => {
