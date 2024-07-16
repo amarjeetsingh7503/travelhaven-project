@@ -49,19 +49,19 @@
         aria-label="Default select example"
         name="listing[category]"
       >
-        <option value="room">Room</option>
-        <option value="countryside">Country Side</option>
-        <option value="camp">Camp</option>
-        <option value="city">City</option>
-        <option value="beach">Beach</option>
-        <option value="mansion">Mansion</option>
-        <option value="pool">Pool</option>
-        <option value="restraunt">Restraunt</option>
-        <option value="village">Village</option>
-        <option value="arctic">Arctic</option>
-        <option value="treehouse">Tree House</option>
-        <option value="gaming">Gaming</option>
-        <option value="sport">Sports</option>
+      <option value="room" <% if (listing.category === 'room'){ %> selected <% } %>>Room</option>
+      <option value="countryside" <% if (listing.category === 'countryside'){ %> selected <% } %>>Country Side</option>
+      <option value="camp" <% if (listing.category === 'camp'){ %> selected <% } %>>Camp</option>
+      <option value="city" <% if (listing.category === 'city'){ %> selected <% } %>>City</option>
+      <option value="beach" <% if (listing.category === 'beach'){ %> selected <% } %>>Beach</option>
+      <option value="mansion" <% if (listing.category === 'mansion'){ %> selected <% } %>>Mansion</option>
+      <option value="pool" <% if (listing.category === 'pool'){ %> selected <% } %>>Pool</option>
+      <option value="restraunt" <% if (listing.category === 'restraunt'){ %> selected <% } %>>Restraunt</option>
+      <option value="village" <% if (listing.category === 'village'){ %> selected <% } %>>Village</option>
+      <option value="arctic" <% if (listing.category === 'arctic'){ %> selected <% } %>>Arctic</option>
+      <option value="treehouse" <% if (listing.category === 'treehouse'){ %> selected <% } %>>Tree House</option>
+      <option value="gaming" <% if (listing.category === 'gaming'){ %> selected <% } %>>Gaming</option>
+      <option value="sport" <% if (listing.category === 'sport'){ %> selected <% } %>>Sports</option>
       </select>
     </div>
     <br />
@@ -107,9 +107,9 @@
           aria-label="Default select example"
           name="listing[priceCategory]"
         >
-          <option value="/night">per night</option>
-          <option value="/person">per person</option>
-          <option value="/hour">per hour</option>
+          <option value="/night" <% if (listing.category === '/night'){ %> selected <% } %>>per night</option>
+          <option value="/person" <% if (listing.category === '/person'){ %> selected <% } %>>per person</option>
+          <option value="/hour" <% if (listing.category === '/hour'){ %> selected <% } %>>per hour</option>
         </select>
       </div>
     </div>
