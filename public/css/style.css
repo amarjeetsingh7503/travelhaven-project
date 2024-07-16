@@ -194,6 +194,11 @@ footer {
     opacity: 1;
 }
 
+.filter-options-dropdown a{
+    text-decoration: none;
+    opacity: 1;
+}
+
 .tax-info {
     font-size: 0.8rem;
     height: 3rem;
