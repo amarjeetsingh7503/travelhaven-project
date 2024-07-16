@@ -24,7 +24,7 @@
     </div>
     <br />
     <div>
-      <label for="description" class="form-label">Deacription</label>
+      <label for="description" class="form-label">Description</label>
       <textarea
         type="text"
         name="listing[description]"
@@ -35,6 +35,31 @@
       ></textarea>
       <div class="valid-feedback">Looks good!</div>
       <div class="invalid-feedback">Please choose a description.</div>
+    </div>
+    <br />
+    <div>
+      <label for="category" class="form-label form-priceCategory"
+        >Listing Category</label
+      >
+      <select
+        class="form-select form-select focus-ring focus-ring-danger py-1 px-1 ps-2"
+        aria-label="Default select example"
+        name="listing[category]"
+      >
+        <option value="room">Room</option>
+        <option value="countryside">Country Side</option>
+        <option value="camp">Camp</option>
+        <option value="city">City</option>
+        <option value="beach">Beach</option>
+        <option value="mansion">Mansion</option>
+        <option value="pool">Pool</option>
+        <option value="restraunt">Restraunt</option>
+        <option value="village">Village</option>
+        <option value="arctic">Arctic</option>
+        <option value="treehouse">Tree House</option>
+        <option value="gaming">Gaming</option>
+        <option value="sport">Sports</option>
+      </select>
     </div>
     <br />
     <div>
@@ -77,7 +102,6 @@
         </select>
       </div>
     </div>
-
     <br />
     <div class="row">
       <div class="col-md-6">

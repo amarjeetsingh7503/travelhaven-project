@@ -34,6 +34,7 @@ const listingSchema = new Schema({
     longitude: Number,
     latitude: Number,
   },
+  category: String,
 });
 
 listingSchema.post("findOneAndDelete", async (listing) => {

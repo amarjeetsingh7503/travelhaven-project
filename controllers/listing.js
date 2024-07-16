@@ -8,7 +8,9 @@ module.exports.index = async (req, res) => {
   if (typeof search == "undefined" || search == "") {
     listings = await Listing.find();
   } else {
-    listings = await Listing.find({ country: search });
+    listings = await Listing.find({
+      $or: [{ country: search }, { category: search }],
+    });
     if (listings.length === 0) {
       listings = await Listing.find();
     }
