@@ -197,6 +197,7 @@ footer {
 .filter-options-dropdown a{
     text-decoration: none;
     opacity: 1;
+    color: #000;
 }
 
 .tax-info {
