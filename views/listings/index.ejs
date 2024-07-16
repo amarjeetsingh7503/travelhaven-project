@@ -250,10 +250,18 @@
       <div class="card-body">
         <p class="card-text">
           <b> <%= listing.title %> </b><br />
-          &#8377;<%= listing.price.toLocaleString("en-IN") %><%=
-          listing.priceCategory %>&nbsp;&nbsp;
-          <i class="tax-value"
-            >Tax: &#8377;<%= (listing.price*0.07).toFixed(2) %></i
+          <i
+            ><span class="before-tax-value"
+              >&#8377;<%= listing.price.toLocaleString("en-IN") %><%=
+              listing.priceCategory %></span
+            ></i
+          >
+          <i
+            ><span class="after-tax-value"
+              >After Tax: &#8377;<%=
+              (listing.price+listing.price*(0.08)).toLocaleString("en-IN") %><%=
+              listing.priceCategory %></span
+            ></i
           >
         </p>
       </div>
